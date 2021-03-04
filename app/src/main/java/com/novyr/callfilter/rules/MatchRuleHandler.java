@@ -20,7 +20,7 @@ public class MatchRuleHandler implements RuleHandlerInterface, RuleHandlerWithFo
             return false;
         }
 
-        return normalizeNumber(number).equals(normalizeNumber(ruleValue));
+        return normalizeNumber(number).contains(normalizeNumber(ruleValue));
     }
 
     private String normalizeNumber(String number) {

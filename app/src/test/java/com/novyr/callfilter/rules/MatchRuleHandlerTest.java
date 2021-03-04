@@ -38,6 +38,7 @@ public class MatchRuleHandlerTest {
         assertTrue(checker.isMatch(new CallDetails("18005551234"), "8005551234"));
         assertTrue(checker.isMatch(new CallDetails("8005551234"), "8005551234"));
         assertTrue(checker.isMatch(new CallDetails("8005551234"), "18005551234"));
+        assertTrue(checker.isMatch(new CallDetails("8005551234"), "551"));
         assertTrue(checker.isMatch(new CallDetails("800-555-1234"), "8005551234"));
         assertTrue(checker.isMatch(new CallDetails("1 (800) 555 1234"), "8005551234"));
     }
